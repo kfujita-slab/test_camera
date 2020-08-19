@@ -1,0 +1,591 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 18 19:04:41 2020
+# Process ID: 8147
+# Current directory: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1
+# Command line: vivado -log system_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
+# Log file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/system_top.vds
+# Journal file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1733.945 ; gain = 208.094 ; free physical = 5064 ; free virtual = 19679
+Command: synth_design -top system_top -part xc7z020clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8229 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1914.176 ; gain = 153.707 ; free physical = 4666 ; free virtual = 19281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/hdl/system_top.sv:4]
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:58]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'cam_gpio_tri_iobuf_0' of component 'IOBUF' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:127]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'cam_iic_scl_iobuf' of component 'IOBUF' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:134]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'cam_iic_sda_iobuf' of component 'IOBUF' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:141]
+INFO: [Synth 8-3491] module 'system' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:2781' bound to instance 'system_i' of component 'system' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'system' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:2835]
+INFO: [Synth 8-3491] module 'system_AXI_BayerToRGB_1_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_AXI_BayerToRGB_1_0_stub.vhdl:5' bound to instance 'AXI_BayerToRGB_1' of component 'system_AXI_BayerToRGB_1_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:3873]
+INFO: [Synth 8-638] synthesizing module 'system_AXI_BayerToRGB_1_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_AXI_BayerToRGB_1_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'system_AXI_GammaCorrection_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_AXI_GammaCorrection_0_0_stub.vhdl:5' bound to instance 'AXI_GammaCorrection_0' of component 'system_AXI_GammaCorrection_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:3888]
+INFO: [Synth 8-638] synthesizing module 'system_AXI_GammaCorrection_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_AXI_GammaCorrection_0_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'system_DVIClocking_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_DVIClocking_0_0_stub.vhdl:5' bound to instance 'DVIClocking_0' of component 'system_DVIClocking_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:3924]
+INFO: [Synth 8-638] synthesizing module 'system_DVIClocking_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_DVIClocking_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'system_MIPI_CSI_2_RX_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_MIPI_CSI_2_RX_0_0_stub.vhdl:5' bound to instance 'MIPI_CSI_2_RX_0' of component 'system_MIPI_CSI_2_RX_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:3932]
+INFO: [Synth 8-638] synthesizing module 'system_MIPI_CSI_2_RX_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_MIPI_CSI_2_RX_0_0_stub.vhdl:62]
+INFO: [Synth 8-3491] module 'system_MIPI_D_PHY_RX_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_MIPI_D_PHY_RX_0_0_stub.vhdl:5' bound to instance 'MIPI_D_PHY_RX_0' of component 'system_MIPI_D_PHY_RX_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:3986]
+INFO: [Synth 8-638] synthesizing module 'system_MIPI_D_PHY_RX_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_MIPI_D_PHY_RX_0_0_stub.vhdl:88]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1384]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1P403ZT' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1205]
+INFO: [Synth 8-3491] module 'system_auto_pc_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1304]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_0_stub.vhdl:44]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1P403ZT' (2#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1205]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_0' (3#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1384]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_1_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1535]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1AIV7DJ' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1004]
+INFO: [Synth 8-3491] module 'system_auto_pc_1' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_1' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1121]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_1_stub.vhdl:50]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1AIV7DJ' (4#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1004]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_1_0' (5#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1535]
+INFO: [Synth 8-3491] module 'system_axi_vdma_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_axi_vdma_0_0_stub.vhdl:5' bound to instance 'axi_vdma_0' of component 'system_axi_vdma_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4146]
+INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_axi_vdma_0_0_stub.vhdl:78]
+INFO: [Synth 8-3491] module 'system_clk_wiz_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'system_clk_wiz_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4216]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4224]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_processing_system7_0_0_stub.vhdl:177]
+INFO: [Synth 8-638] synthesizing module 'system_ps7_0_axi_periph_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1825]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1H7AUOX' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1H7AUOX' (6#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4Y7TYO' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_4Y7TYO' (7#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_FKL2TE' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:254]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_FKL2TE' (8#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_15QZ4LV' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:359]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_15QZ4LV' (9#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_TUCI1Y' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:470]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_TUCI1Y' (10#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:470]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1IWS6WN' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:581]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1IWS6WN' (11#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:581]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11SE3QO' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:711]
+INFO: [Synth 8-3491] module 'system_auto_pc_2' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_2' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:894]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_2' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_auto_pc_2_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (12#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:711]
+INFO: [Synth 8-3491] module 'system_xbar_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:2642]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (13#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:1825]
+INFO: [Synth 8-3491] module 'system_rst_clk_wiz_0_50M_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_50M' of component 'system_rst_clk_wiz_0_50M_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4557]
+INFO: [Synth 8-638] synthesizing module 'system_rst_clk_wiz_0_50M_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_rst_clk_wiz_0_50M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_rst_vid_clk_dyn_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:5' bound to instance 'rst_vid_clk_dyn' of component 'system_rst_vid_clk_dyn_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4570]
+INFO: [Synth 8-638] synthesizing module 'system_rst_vid_clk_dyn_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_rst_vid_clk_dyn_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_v_axi4s_vid_out_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:5' bound to instance 'v_axi4s_vid_out_0' of component 'system_v_axi4s_vid_out_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4583]
+INFO: [Synth 8-638] synthesizing module 'system_v_axi4s_vid_out_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_v_axi4s_vid_out_0_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'system_video_dynclk_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_video_dynclk_0_stub.vhdl:5' bound to instance 'video_dynclk' of component 'system_video_dynclk_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4617]
+INFO: [Synth 8-638] synthesizing module 'system_video_dynclk_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_video_dynclk_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_vtg_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_vtg_0_stub.vhdl:5' bound to instance 'vtg' of component 'system_vtg_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4642]
+INFO: [Synth 8-638] synthesizing module 'system_vtg_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/system_vtg_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:4677]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 3 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (14#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (15#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'system' (16#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/synth/system.vhd:2835]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (17#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:58]
+WARNING: [Synth 8-7023] instance 'bd_inst0' of module 'system_wrapper' has 39 connections declared, but only 18 given [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/hdl/system_top.sv:33]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi_0' [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/.Xil/Vivado-8147-condor.cis.nagasaki-u.ac.jp/realtime/rgb2dvi_0_stub.vhdl:22]
+INFO: [Synth 8-6155] done synthesizing module 'system_top' (18#1) [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/hdl/system_top.sv:4]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_11SE3QO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_11SE3QO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1IWS6WN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1IWS6WN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1IWS6WN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1IWS6WN has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_TUCI1Y has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_TUCI1Y has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_TUCI1Y has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_TUCI1Y has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_15QZ4LV has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_15QZ4LV has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_15QZ4LV has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_15QZ4LV has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_FKL2TE has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_FKL2TE has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_FKL2TE has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_FKL2TE has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1AIV7DJ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1AIV7DJ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_1_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_1_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design system_top has unconnected port sysclk
+WARNING: [Synth 8-3331] design system_top has unconnected port btn[3]
+WARNING: [Synth 8-3331] design system_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design system_top has unconnected port btn[1]
+WARNING: [Synth 8-3331] design system_top has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1977.906 ; gain = 217.438 ; free physical = 4686 ; free virtual = 19302
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1981.867 ; gain = 221.398 ; free physical = 4684 ; free virtual = 19299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1981.867 ; gain = 221.398 ; free physical = 4684 ; free virtual = 19299
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_in_context.xdc] for cell 'bd_inst0/system_i/AXI_BayerToRGB_1'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_in_context.xdc] for cell 'bd_inst0/system_i/AXI_BayerToRGB_1'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_in_context.xdc] for cell 'bd_inst0/system_i/AXI_GammaCorrection_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_in_context.xdc] for cell 'bd_inst0/system_i/AXI_GammaCorrection_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0/system_DVIClocking_0_0_in_context.xdc] for cell 'bd_inst0/system_i/DVIClocking_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0/system_DVIClocking_0_0_in_context.xdc] for cell 'bd_inst0/system_i/DVIClocking_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_in_context.xdc] for cell 'bd_inst0/system_i/MIPI_CSI_2_RX_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_in_context.xdc] for cell 'bd_inst0/system_i/MIPI_CSI_2_RX_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc] for cell 'bd_inst0/system_i/MIPI_D_PHY_RX_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc] for cell 'bd_inst0/system_i/MIPI_D_PHY_RX_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0/system_axi_vdma_0_0_in_context.xdc] for cell 'bd_inst0/system_i/axi_vdma_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0/system_axi_vdma_0_0_in_context.xdc] for cell 'bd_inst0/system_i/axi_vdma_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0/system_clk_wiz_0_0_in_context.xdc] for cell 'bd_inst0/system_i/clk_wiz_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0/system_clk_wiz_0_0_in_context.xdc] for cell 'bd_inst0/system_i/clk_wiz_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc] for cell 'bd_inst0/system_i/processing_system7_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0/system_processing_system7_0_0_in_context.xdc] for cell 'bd_inst0/system_i/processing_system7_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'bd_inst0/system_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0/system_xbar_0_in_context.xdc] for cell 'bd_inst0/system_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'bd_inst0/system_i/rst_clk_wiz_0_50M'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'bd_inst0/system_i/rst_clk_wiz_0_50M'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_in_context.xdc] for cell 'bd_inst0/system_i/rst_vid_clk_dyn'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_in_context.xdc] for cell 'bd_inst0/system_i/rst_vid_clk_dyn'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'bd_inst0/system_i/v_axi4s_vid_out_0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'bd_inst0/system_i/v_axi4s_vid_out_0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0/system_video_dynclk_0_in_context.xdc] for cell 'bd_inst0/system_i/video_dynclk'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0/system_video_dynclk_0_in_context.xdc] for cell 'bd_inst0/system_i/video_dynclk'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0/system_vtg_0_in_context.xdc] for cell 'bd_inst0/system_i/vtg'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_vtg_0/system_vtg_0/system_vtg_0_in_context.xdc] for cell 'bd_inst0/system_i/vtg'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'bd_inst0/system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0/system_auto_pc_0_in_context.xdc] for cell 'bd_inst0/system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'bd_inst0/system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'bd_inst0/system_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'bd_inst0/system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2/system_auto_pc_2_in_context.xdc] for cell 'bd_inst0/system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_inst0'
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_inst0'
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/timing.xdc]
+WARNING: [Vivado 12-508] No pins matched '.*video_dynclk/.*/mmcm_adv_inst/CLKOUT0'. [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/timing.xdc:9]
+WARNING: [Vivado 12-508] No pins matched '.*DVIClocking_0/U0/PixelClkBuffer/O'. [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/timing.xdc:17]
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/auto.xdc]
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/auto.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/constrs_1/imports/constraints/auto.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/xdc/cam_test.xdc]
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/xdc/cam_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/xdc/cam_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2096.473 ; gain = 0.000 ; free physical = 4588 ; free virtual = 19204
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2096.477 ; gain = 0.004 ; free physical = 4588 ; free virtual = 19204
+WARNING: [Timing 38-316] Clock period '6.060' specified during out-of-context synthesis of instance 'rgb2dvi_inst0' at clock pin 'PixelClk' is different from the actual clock period '1.347', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'bd_inst0/system_i/MIPI_CSI_2_RX_0' at clock pin 'video_aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'bd_inst0/system_i/MIPI_D_PHY_RX_0' at clock pin 'dphy_clk_hs_p' is different from the actual clock period '4.761', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'bd_inst0/system_i/axi_vdma_0' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '6.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'bd_inst0/system_i/rst_vid_clk_dyn' at clock pin 'slowest_sync_clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '13.468' specified during out-of-context synthesis of instance 'bd_inst0/system_i/v_axi4s_vid_out_0' at clock pin 'vid_io_out_clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '13.468' specified during out-of-context synthesis of instance 'bd_inst0/system_i/vtg' at clock pin 'clk' is different from the actual clock period '1.347', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4655 ; free virtual = 19271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4655 ; free virtual = 19271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_hs_clock_clk_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_hs_clock_clk_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_hs_clock_clk_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_hs_clock_clk_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_clk_lp_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_clk_lp_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_clk_lp_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_clk_lp_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_hs_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_hs_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_lp_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_lp_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_lp_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_lp_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_lp_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_lp_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for dphy_data_lp_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dphy_data_lp_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_n[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_n[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_n[2]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_n[2]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_p[0]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_p[1]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_data_p[2]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_data_p[2]. (constraint file  /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/AXI_BayerToRGB_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/AXI_GammaCorrection_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/DVIClocking_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/MIPI_CSI_2_RX_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/MIPI_D_PHY_RX_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/axi_mem_intercon_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/axi_vdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/rst_clk_wiz_0_50M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/rst_vid_clk_dyn. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/video_dynclk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/vtg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/axi_mem_intercon_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_inst0/system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb2dvi_inst0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4655 ; free virtual = 19271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4657 ; free virtual = 19273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4652 ; free virtual = 19271
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/MIPI_D_PHY_RX_0/RxDDRClkHS' to pin 'bd_inst0/system_i/MIPI_D_PHY_RX_0/bbstub_RxDDRClkHS/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/MIPI_D_PHY_RX_0/RxByteClkHS' to pin 'bd_inst0/system_i/MIPI_D_PHY_RX_0/bbstub_RxByteClkHS/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/clk_wiz_0/clk_out1' to pin 'bd_inst0/system_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'bd_inst0/system_i/clk_wiz_0/clk_in1' to 'bd_inst0/system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/clk_wiz_0/clk_out2' to pin 'bd_inst0/system_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'bd_inst0/system_i/clk_wiz_0/clk_in1' to 'bd_inst0/system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/clk_wiz_0/clk_out3' to pin 'bd_inst0/system_i/clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'bd_inst0/system_i/clk_wiz_0/clk_in1' to 'bd_inst0/system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/processing_system7_0/FCLK_CLK0' to pin 'bd_inst0/system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'bd_inst0/system_i/video_dynclk/pxl_clk_5x' to pin 'bd_inst0/system_i/video_dynclk/bbstub_pxl_clk_5x/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'bd_inst0/system_i/video_dynclk/clk_in1' to 'bd_inst0/system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4536 ; free virtual = 19156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4532 ; free virtual = 19152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4534 ; free virtual = 19153
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4534 ; free virtual = 19153
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4534 ; free virtual = 19153
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |system_auto_pc_0               |         1|
+|2     |system_auto_pc_1               |         1|
+|3     |system_auto_pc_2               |         1|
+|4     |system_xbar_0                  |         1|
+|5     |system_AXI_BayerToRGB_1_0      |         1|
+|6     |system_AXI_GammaCorrection_0_0 |         1|
+|7     |system_DVIClocking_0_0         |         1|
+|8     |system_MIPI_CSI_2_RX_0_0       |         1|
+|9     |system_MIPI_D_PHY_RX_0_0       |         1|
+|10    |system_axi_vdma_0_0            |         1|
+|11    |system_clk_wiz_0_0             |         1|
+|12    |system_processing_system7_0_0  |         1|
+|13    |system_rst_clk_wiz_0_50M_0     |         1|
+|14    |system_rst_vid_clk_dyn_0       |         1|
+|15    |system_v_axi4s_vid_out_0_0     |         1|
+|16    |system_video_dynclk_0          |         1|
+|17    |system_vtg_0                   |         1|
+|18    |rgb2dvi_0                      |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |rgb2dvi_0_bbox_17                     |     1|
+|2     |system_AXI_BayerToRGB_1_0_bbox_0      |     1|
+|3     |system_AXI_GammaCorrection_0_0_bbox_1 |     1|
+|4     |system_DVIClocking_0_0_bbox_2         |     1|
+|5     |system_MIPI_CSI_2_RX_0_0_bbox_3       |     1|
+|6     |system_MIPI_D_PHY_RX_0_0_bbox_4       |     1|
+|7     |system_auto_pc_0_bbox_5               |     1|
+|8     |system_auto_pc_1_bbox_6               |     1|
+|9     |system_auto_pc_2_bbox_10              |     1|
+|10    |system_axi_vdma_0_0_bbox_7            |     1|
+|11    |system_clk_wiz_0_0_bbox_8             |     1|
+|12    |system_processing_system7_0_0_bbox_9  |     1|
+|13    |system_rst_clk_wiz_0_50M_0_bbox_12    |     1|
+|14    |system_rst_vid_clk_dyn_0_bbox_13      |     1|
+|15    |system_v_axi4s_vid_out_0_0_bbox_14    |     1|
+|16    |system_video_dynclk_0_bbox_15         |     1|
+|17    |system_vtg_0_bbox_16                  |     1|
+|18    |system_xbar_0_bbox_11                 |     1|
+|19    |IOBUF                                 |     3|
++------+--------------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------------+------+
+|      |Instance                 |Module                      |Cells |
++------+-------------------------+----------------------------+------+
+|1     |top                      |                            |  2337|
+|2     |  bd_inst0               |system_wrapper              |  2329|
+|3     |    system_i             |system                      |  2326|
+|4     |      axi_mem_intercon   |system_axi_mem_intercon_0   |   125|
+|5     |        s00_couplers     |s00_couplers_imp_1P403ZT    |   125|
+|6     |      axi_mem_intercon_1 |system_axi_mem_intercon_1_0 |   135|
+|7     |        s00_couplers     |s00_couplers_imp_1AIV7DJ    |   135|
+|8     |      ps7_0_axi_periph   |system_ps7_0_axi_periph_0   |   884|
+|9     |        s00_couplers     |s00_couplers_imp_11SE3QO    |   177|
+|10    |      xlconcat_0         |system_xlconcat_0_0         |     0|
++------+-------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4534 ; free virtual = 19153
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2100.441 ; gain = 221.398 ; free physical = 4589 ; free virtual = 19208
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2100.441 ; gain = 339.973 ; free physical = 4603 ; free virtual = 19222
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2100.441 ; gain = 0.000 ; free physical = 4532 ; free virtual = 19152
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2100.441 ; gain = 366.496 ; free physical = 4622 ; free virtual = 19241
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2100.441 ; gain = 0.000 ; free physical = 4622 ; free virtual = 19241
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1/system_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 19:05:36 2020...

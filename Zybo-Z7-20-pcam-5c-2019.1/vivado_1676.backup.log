@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 18 18:35:54 2020
+# Process ID: 1676
+# Current directory: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1
+# Command line: vivado vivado_proj/Zybo-Z7-20-pcam-5c.xpr
+# Log file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado.log
+# Journal file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado_proj/Zybo-Z7-20-pcam-5c.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.ipdefs/repo_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 6656.793 ; gain = 189.305 ; free physical = 5611 ; free virtual = 20356
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk -hwspec /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk -hwspec /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 18:42:12 2020...

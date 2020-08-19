@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 18 17:39:00 2020
+# Process ID: 10644
+# Current directory: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/rgb2dvi_0_synth_1
+# Command line: vivado -log rgb2dvi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2dvi_0.tcl
+# Log file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/rgb2dvi_0_synth_1/rgb2dvi_0.vds
+# Journal file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.runs/rgb2dvi_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source rgb2dvi_0.tcl -notrace

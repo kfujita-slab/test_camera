@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 18 18:35:54 2020
+# Process ID: 1676
+# Current directory: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1
+# Command line: vivado vivado_proj/Zybo-Z7-20-pcam-5c.xpr
+# Log file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado.log
+# Journal file: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vivado_proj/Zybo-Z7-20-pcam-5c.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk -hwspec /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.sdk/system_top.hdf
