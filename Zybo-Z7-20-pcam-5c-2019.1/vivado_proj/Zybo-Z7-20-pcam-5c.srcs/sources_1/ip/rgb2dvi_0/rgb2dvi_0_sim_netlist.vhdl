@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Tue Aug 18 17:39:48 2020
+-- Date        : Tue Aug 18 17:20:36 2020
 -- Host        : condor.cis.nagasaki-u.ac.jp running 64-bit CentOS Linux release 7.8.2003 (Core)
--- Command     : write_vhdl -force -mode funcsim
---               /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.vhdl
--- Design      : rgb2dvi_0
+-- Command     : write_vhdl -force -mode funcsim -rename_top rgb2dvi_0 -prefix
+--               rgb2dvi_0_ system_rgb2dvi_0_0_sim_netlist.vhdl
+-- Design      : system_rgb2dvi_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg400-1
@@ -22,8 +22,6 @@ entity rgb2dvi_0_OutputSERDES is
     PixelClk : in STD_LOGIC;
     aRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of rgb2dvi_0_OutputSERDES : entity is "OutputSERDES";
 end rgb2dvi_0_OutputSERDES;
 
 architecture STRUCTURE of rgb2dvi_0_OutputSERDES is
@@ -659,8 +657,6 @@ entity rgb2dvi_0_SyncAsync is
     PixelClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of rgb2dvi_0_SyncAsync : entity is "SyncAsync";
 end rgb2dvi_0_SyncAsync;
 
 architecture STRUCTURE of rgb2dvi_0_SyncAsync is
@@ -712,8 +708,6 @@ entity rgb2dvi_0_TMDS_Encoder is
     vid_pVDE : in STD_LOGIC;
     vid_pData : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of rgb2dvi_0_TMDS_Encoder : entity is "TMDS_Encoder";
 end rgb2dvi_0_TMDS_Encoder;
 
 architecture STRUCTURE of rgb2dvi_0_TMDS_Encoder is
@@ -4499,11 +4493,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity rgb2dvi_0_ResetBridge is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    aRst : in STD_LOGIC;
+    aRst_n : in STD_LOGIC;
     PixelClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of rgb2dvi_0_ResetBridge : entity is "ResetBridge";
 end rgb2dvi_0_ResetBridge;
 
 architecture STRUCTURE of rgb2dvi_0_ResetBridge is
@@ -4511,12 +4503,19 @@ architecture STRUCTURE of rgb2dvi_0_ResetBridge is
   attribute RTL_KEEP : string;
   attribute RTL_KEEP of aRst_int : signal is "true";
 begin
-  aRst_int <= aRst;
 SyncAsyncx: entity work.rgb2dvi_0_SyncAsync
      port map (
       AS(0) => aRst_int,
       PixelClk => PixelClk,
       \out\(0) => \out\(0)
+    );
+aRst_int_inferred_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => aRst_n,
+      O => aRst_int
     );
 end STRUCTURE;
 library IEEE;
@@ -4538,8 +4537,6 @@ entity rgb2dvi_0_rgb2dvi is
     PixelClk : in STD_LOGIC;
     SerialClk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of rgb2dvi_0_rgb2dvi : entity is "rgb2dvi";
   attribute kClkPrimitive : string;
   attribute kClkPrimitive of rgb2dvi_0_rgb2dvi : entity is "PLL";
   attribute kClkRange : integer;
@@ -4555,7 +4552,7 @@ entity rgb2dvi_0_rgb2dvi is
   attribute kGenerateSerialClk : string;
   attribute kGenerateSerialClk of rgb2dvi_0_rgb2dvi : entity is "FALSE";
   attribute kRstActiveHigh : string;
-  attribute kRstActiveHigh of rgb2dvi_0_rgb2dvi : entity is "TRUE";
+  attribute kRstActiveHigh of rgb2dvi_0_rgb2dvi : entity is "FALSE";
 end rgb2dvi_0_rgb2dvi;
 
 architecture STRUCTURE of rgb2dvi_0_rgb2dvi is
@@ -4627,7 +4624,7 @@ ClockSerializer: entity work.rgb2dvi_0_OutputSERDES
 LockLostReset: entity work.rgb2dvi_0_ResetBridge
      port map (
       PixelClk => PixelClk,
-      aRst => aRst,
+      aRst_n => aRst_n,
       \out\(0) => pRstLck
     );
 end STRUCTURE;
@@ -4641,7 +4638,7 @@ entity rgb2dvi_0 is
     TMDS_Clk_n : out STD_LOGIC;
     TMDS_Data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
     TMDS_Data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    aRst : in STD_LOGIC;
+    aRst_n : in STD_LOGIC;
     vid_pData : in STD_LOGIC_VECTOR ( 23 downto 0 );
     vid_pVDE : in STD_LOGIC;
     vid_pHSync : in STD_LOGIC;
@@ -4652,7 +4649,7 @@ entity rgb2dvi_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of rgb2dvi_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of rgb2dvi_0 : entity is "rgb2dvi_0,rgb2dvi,{}";
+  attribute CHECK_LICENSE_TYPE of rgb2dvi_0 : entity is "system_rgb2dvi_0_0,rgb2dvi,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of rgb2dvi_0 : entity is "yes";
   attribute x_core_info : string;
@@ -4675,7 +4672,7 @@ architecture STRUCTURE of rgb2dvi_0 is
   attribute kGenerateSerialClk : string;
   attribute kGenerateSerialClk of U0 : label is "FALSE";
   attribute kRstActiveHigh : string;
-  attribute kRstActiveHigh of U0 : label is "TRUE";
+  attribute kRstActiveHigh of U0 : label is "FALSE";
   attribute x_interface_info : string;
   attribute x_interface_info of PixelClk : signal is "xilinx.com:signal:clock:1.0 PixelClk CLK";
   attribute x_interface_parameter : string;
@@ -4686,8 +4683,8 @@ architecture STRUCTURE of rgb2dvi_0 is
   attribute x_interface_parameter of TMDS_Clk_n : signal is "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0";
   attribute x_interface_info of TMDS_Clk_p : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK";
   attribute x_interface_parameter of TMDS_Clk_p : signal is "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0";
-  attribute x_interface_info of aRst : signal is "xilinx.com:signal:reset:1.0 AsyncRst RST";
-  attribute x_interface_parameter of aRst : signal is "XIL_INTERFACENAME AsyncRst, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  attribute x_interface_info of aRst_n : signal is "xilinx.com:signal:reset:1.0 AsyncRst_n RST";
+  attribute x_interface_parameter of aRst_n : signal is "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of vid_pHSync : signal is "xilinx.com:interface:vid_io:1.0 RGB HSYNC";
   attribute x_interface_info of vid_pVDE : signal is "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO";
   attribute x_interface_info of vid_pVSync : signal is "xilinx.com:interface:vid_io:1.0 RGB VSYNC";
@@ -4703,8 +4700,8 @@ U0: entity work.rgb2dvi_0_rgb2dvi
       TMDS_Clk_p => TMDS_Clk_p,
       TMDS_Data_n(2 downto 0) => TMDS_Data_n(2 downto 0),
       TMDS_Data_p(2 downto 0) => TMDS_Data_p(2 downto 0),
-      aRst => aRst,
-      aRst_n => '1',
+      aRst => '0',
+      aRst_n => aRst_n,
       vid_pData(23 downto 0) => vid_pData(23 downto 0),
       vid_pHSync => vid_pHSync,
       vid_pVDE => vid_pVDE,

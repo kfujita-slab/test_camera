@@ -1,8 +1,8 @@
-19:12:54 **** Incremental Build of configuration Debug for project pcam_vdma_hdmi ****
+13:01:43 **** Incremental Build of configuration Debug for project pcam_vdma_hdmi ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: `main-build' に対して行うべき事はありません.
 
-19:12:54 Build Finished (took 63ms)
+13:01:43 Build Finished (took 79ms)
 

@@ -7,6 +7,9 @@
 
 # XDC: /home/users/kfujita/tmp_test/Zybo-Z7-20-pcam-5c-2019.1/src/xdc/cam_test.xdc
 
+# IP: ip/rgb2dvi_0/rgb2dvi_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rgb2dvi_0 || ORIG_REF_NAME==rgb2dvi_0} -quiet] -quiet
+
 # Block Designs: bd/system/system.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system || ORIG_REF_NAME==system} -quiet] -quiet
 

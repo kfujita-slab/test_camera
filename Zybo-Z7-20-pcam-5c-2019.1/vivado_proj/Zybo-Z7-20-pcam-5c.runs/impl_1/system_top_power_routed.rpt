@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Tue Aug 18 19:08:26 2020
+| Date             : Wed Aug 19 12:04:32 2020
 | Host             : condor.cis.nagasaki-u.ac.jp running 64-bit CentOS Linux release 7.8.2003 (Core)
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
 | Design           : system_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.927        |
+| Total On-Chip Power (W)  | 1.928        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.775        |
+| Dynamic (W)              | 1.776        |
 | Device Static (W)        | 0.152        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 62.8         |
@@ -53,21 +53,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.058 |       13 |       --- |             --- |
-| Slice Logic              |     0.011 |    21561 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     7481 |     53200 |           14.06 |
+| Slice Logic              |     0.011 |    21562 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     7480 |     53200 |           14.06 |
 |   CARRY4                 |    <0.001 |      244 |     13300 |            1.83 |
 |   Register               |    <0.001 |    10707 |    106400 |           10.06 |
 |   F7/F8 Muxes            |    <0.001 |      786 |     53200 |            1.48 |
 |   LUT as Distributed RAM |    <0.001 |       62 |     17400 |            0.36 |
 |   LUT as Shift Register  |    <0.001 |      229 |     17400 |            1.32 |
 |   Others                 |     0.000 |      766 |       --- |             --- |
-| Signals                  |     0.014 |    15576 |       --- |             --- |
+| Signals                  |     0.014 |    15582 |       --- |             --- |
 | Block RAM                |     0.006 |     10.5 |       140 |            7.50 |
 | MMCM                     |     0.191 |        2 |         4 |           50.00 |
 | I/O                      |     0.084 |       23 |       125 |           18.40 |
 | PS7                      |     1.412 |        1 |       --- |             --- |
 | Static Power             |     0.152 |          |           |                 |
-| Total                    |     1.927 |          |           |                 |
+| Total                    |     1.928 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.114 |       0.097 |      0.017 |
+| Vccint    |       1.000 |     0.115 |       0.097 |      0.017 |
 | Vccaux    |       1.800 |     0.145 |       0.129 |      0.016 |
 | Vcco33    |       3.300 |     0.011 |       0.010 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -162,24 +162,24 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| system_top                           |     1.775 |
+| system_top                           |     1.776 |
 |   bd_inst0                           |     1.749 |
 |     cam_gpio_tri_iobuf_0             |     0.004 |
 |     cam_iic_scl_iobuf                |     0.004 |
 |     cam_iic_sda_iobuf                |     0.004 |
-|     system_i                         |     1.735 |
+|     system_i                         |     1.736 |
 |       AXI_BayerToRGB_1               |     0.003 |
 |       AXI_GammaCorrection_0          |     0.004 |
 |       MIPI_CSI_2_RX_0                |     0.008 |
-|       MIPI_D_PHY_RX_0                |     0.054 |
+|       MIPI_D_PHY_RX_0                |     0.053 |
 |       axi_mem_intercon_1             |     0.001 |
-|       axi_vdma_0                     |     0.030 |
+|       axi_vdma_0                     |     0.031 |
 |       clk_wiz_0                      |     0.087 |
 |       processing_system7_0           |     1.413 |
 |       ps7_0_axi_periph               |     0.002 |
 |       v_axi4s_vid_out_0              |     0.006 |
 |       video_dynclk                   |     0.109 |
-|       vtg                            |     0.017 |
+|       vtg                            |     0.016 |
 |   rgb2dvi_inst0                      |     0.026 |
 |     U0                               |     0.026 |
 |       ClockSerializer                |     0.006 |

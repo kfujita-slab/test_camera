@@ -61,7 +61,7 @@ module system_top
         .TMDS_Clk_n(hdmi_tx_clk_n),
         .TMDS_Data_p(hdmi_tx_data_p),
         .TMDS_Data_n(hdmi_tx_data_n),
-        .aRst(locked),
+        .aRst_n(locked),
         .vid_pData(vid_data),
         .vid_pVDE(vid_active_video),
         .vid_pHSync(vid_hsync),

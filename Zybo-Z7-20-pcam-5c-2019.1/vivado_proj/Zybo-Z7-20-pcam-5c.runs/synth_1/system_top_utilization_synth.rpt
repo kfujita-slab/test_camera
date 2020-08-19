@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Aug 18 19:05:36 2020
+| Date         : Wed Aug 19 12:01:41 2020
 | Host         : condor.cis.nagasaki-u.ac.jp running 64-bit CentOS Linux release 7.8.2003 (Core)
 | Command      : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
 | Design       : system_top
